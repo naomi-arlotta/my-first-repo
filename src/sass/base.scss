@@ -1,34 +1,40 @@
-body {
-    background-color: $primary;
 
-    h1 {
-        background-color: $grey;
+
+.section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include media-breakpoint-up(md) {
+        padding-bottom: 60px;
+        padding-top: 60px;
     }
 }
-@mixin transform($property) {
-    -webkit-transform: $property;
-    -ms-transform: $property;
-    transform: $property;
+
+.page-hero {
+    .page-hero-content {
+        min-height: 336px;
+        h1, h2, p {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            color: white;
+        }
+    }
 }
 
-%message-shared {
-    border: 1px solid #ccc;
-    padding: 10px;
-    color: #333;
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) { 
+
+}
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) { 
+
 }
 
-h1 {
-    @extend %message-shared;
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) { 
+
 }
 
-.box {
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    @include transform(rotate(30deg))
-}
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) { 
 
-@include media-breakpoint-up(lg) {
-    body {
-        background-color: blue;}
 }

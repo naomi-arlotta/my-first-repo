@@ -1,6 +1,10 @@
 @import 'modules/variables';
+
+// bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
+// typography
 @import 'modules/typography';
-@import 'base.scss';
 
-
+// base style
+@import 'base';
