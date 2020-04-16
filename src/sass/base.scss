@@ -1,25 +1,5 @@
 
 
-.section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    @include media-breakpoint-up(md) {
-        padding-bottom: 60px;
-        padding-top: 60px;
-    }
-}
-
-.page-hero {
-    .page-hero-content {
-        min-height: 336px;
-        h1, h2, p {
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-            color: white;
-        }
-    }
-}
-
-
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) { 
 
